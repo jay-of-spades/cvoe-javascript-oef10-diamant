@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  background-color: hsl(50, 30%, 76%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+}
+header {
+  max-height: 10vh;
+  display: flex;
+  justify-content: center;
+  padding: 1vh;
+}
+header,
+nav,
+main,
+footer {
+  width: 80%;
+}
+
+.logo {
+  height: 7vh;
+  width: 7vh;
+}
+
+nav {
+  max-height: 7vh;
+  background-color: hsla(36, 21%, 42%, 0.7);
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: hsla(48, 45%, 87%, 0.8);
+  font-size: 2.5rem;
+  padding: 2vh 2vh;
+  transition: all 1s;
+}
+nav a:hover {
+  color: hsla(48, 90%, 97%, 1);
+  font-weight: 700;
+}
+main {
+  height: 73vh;
+  display: flex;
+  margin: 1vh auto;
+  gap: 1vw;
+}
+#diamant-gewicht,
+#diamant-diagram {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: solid 1px black;
+  border-radius: 5px;
+  background-color: hsl(50, 30%, 76%);
+  box-shadow: 5px 5px 5px hsl(0, 0%, 0%);
+}
+#diamant-gewicht h2 {
+  font-size: 2.25vw;
+  margin: 17vh 0 0 0;
+  padding: 2vw 1vw;
+}
+#gewichtGram {
+  margin: 1.5vw auto 1.5vw 2vw;
+  background-color: hsl(36, 21%, 42%);
+  color: hsla(48, 90%, 97%, 1);
+  outline: none;
+}
+
+#gewichtGram[type='number']::placeholder {
+  color: hsla(48, 90%, 97%, 1);
+}
+
+#gewichtGram,
+#gewichtBerekenen,
+.offerte {
+  position: absolute;
+  width: 45%;
+  padding: 0.25vw 0.15vw;
+  font-size: 1.75vw;
+  bottom: 31vh;
+  border-radius: 5px;
+  border: none;
+}
+#gewichtBerekenen,
+.offerte {
+  width: 75%;
+  bottom: 21.5vh;
+  margin: auto 1.5vw;
+  background-color: hsl(0, 0%, 0%);
+  color: hsla(48, 90%, 97%, 1);
+}
+
+#diamantGewichtCarat {
+  position: absolute;
+  bottom: 5vh;
+  font-size: 5vw;
+  margin: 0 1.5vw;
+  padding: 3vw 10vw 3vw 2vw;
+  border: solid 1px hsla(36, 21%, 42%, 0.7);
+}
+
+.diamant-afmetingen {
+  width: 95%;
+  margin: 5vh auto;
+  border-radius: 5px;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+footer {
+  height: 10vh;
+  border-radius: 5px;
+  background-color: hsla(36, 21%, 42%, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.copyright {
+  font-size: 1vw;
+}
+footer p {
+}

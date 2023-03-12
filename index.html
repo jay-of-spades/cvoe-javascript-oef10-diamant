@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jay Santarina" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Oefining 10: Diamant</title>
+  </head>
+  <body>
+    <header>
+      <img src="media/diamant.svg" alt="" class="logo" />
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div id="diamant-gewicht">
+        <h2>Het gewicht van uw diamant</h2>
+        <input
+          type="number"
+          placeholder="gewicht in gram"
+          inputmode="numeric"
+          id="gewichtGram"
+        />
+        <input
+          type="button"
+          value="Bereken gewicht van diamant"
+          id="gewichtBerekenen"
+          onclick="gewichtInCarat()"
+        />
+        <p id="diamantGewichtCarat">5 Carats</p>
+      </div>
+      <div id="diamant-diagram">
+        <img src="media/afmetingen.svg" alt="" class="diamant-afmetingen" />
+        <button class="offerte">Vraag een officiële offerte</button>
+      </div>
+    </main>
+    <footer>
+      <p class="copyright">&copy; Copyright 2023-present: Diamant Direct</p>
+      <p>All rights reserved</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
